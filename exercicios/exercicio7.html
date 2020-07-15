@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var letra = prompt("Digite a letra que deseja saber no texto").toLowerCase();
+            var texto = prompt("Digite o texto em que deseja saber a letra").toLowerCase();
+
+            letraNoTexto(letra, texto);
+
+            function letraNoTexto(letra, texto)
+            {
+                var vezes = 0;
+
+                for(var i = 0; i < texto.length; i++)
+                {
+                    if(texto[i] == letra)
+                    {
+                        vezes++;
+                    }
+                }
+                document.write(`A letra "${letra}" aparece ${vezes} vezes no texto`)
+            }
+        </script>
+    </body>
+</html>

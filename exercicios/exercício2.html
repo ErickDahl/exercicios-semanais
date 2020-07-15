@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function exibePares(inicial,final)
+            {
+                for(var i = inicial; i <= final; i++)
+                {
+                    if(i % 2 == 0)
+                    {
+                        document.write(`${i} é um número par <br>`);
+                    }
+                }
+            }
+            var inicio = parseInt(prompt("Digite o número inicial"));
+            var fim= parseInt(prompt("Digite o número final"));
+
+            exibePares(inicio,fim);
+            
+        </script>
+    </body>
+</html>

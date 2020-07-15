@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var usuarios = [
+                {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+            function escreveDados(usuario)
+            {
+                for( valores of usuario)
+                {
+                    nome = valores.nome;
+                    habilidade = valores.habilidades.join();
+                    document.write(`O ${nome} possui as habilidades: ${habilidade}<br>`);
+                }
+            }
+
+            escreveDados(usuarios);
+
+        </script>
+    </body>
+</html>
